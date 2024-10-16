@@ -34,6 +34,7 @@ public:
 			member[0] = 42;
 		}
 	}
+
 	//move constructor 
 	Entity(Entity&& other) noexcept : member(other.member) {
 		std::cout << "Move constructor called" << std::endl;
